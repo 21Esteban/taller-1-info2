@@ -1,31 +1,27 @@
-// ejercicio 15. Escriba un programa que pida constantemente números hasta que se ingrese el número cero e imprima en pantalla la suma de todos los números ingresados.
-// Ej: si se ingresan 1, 2, 3, 0 se debe imprimir:
-// El resultado de la sumatoria es: 6
-
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main(){
+int main()
+{
+    int numero = 1;int acumulador;
+
+   // cout<<"Ingrese un numero : "<<endl; cin>>numero;
 
 
-    float acumulador = 0;
-    float num=999;
-
-    cout << "Ingrese varios numeros para sumarlos , cuando desee mirar la suma digite el numero 0 (cero)"<< endl;
 
 
-    while(num != 0){
+    //mientras que el numero que el usuario ingresa sea diferente de 0 entonces vamos a ir sumando a una variable
 
-        num = 0;
-
-       cin >> num;
-
-       acumulador = acumulador + num;
+    while(numero != 0){
+        numero = 0;
+        cout<<"Ingrese un numero : "<<endl; cin>>numero;
+        acumulador = acumulador + numero;
 
     }
 
-    cout <<"La suma total de todos los numeros es : "<< acumulador << endl;
+    cout<<" El resultado de la sumatoria es:"<< acumulador<<endl;
+
 
     return 0;
 }
